@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     var player = AVAudioPlayer()
     
-    let audioPath = Bundle.main.path(forResource: "bach", ofType: "mp3")
+    let audioPath = Bundle.main.path(forResource: "sheep", ofType: "mp3")
     
     var timer = Timer()
     
@@ -55,6 +55,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stop(_ sender: Any) {
+        
+        scrubber.value = 0
         
         timer.invalidate()
         

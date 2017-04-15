@@ -12,8 +12,8 @@
 		3DB051CA1EA2680000EA3129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB051C81EA2680000EA3129 /* Main.storyboard */; };
 		3DB051CC1EA2680000EA3129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB051CB1EA2680000EA3129 /* Assets.xcassets */; };
 		3DB051CF1EA2680000EA3129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB051CD1EA2680000EA3129 /* LaunchScreen.storyboard */; };
-		3DB051D71EA26BF400EA3129 /* sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DB051D61EA26BF400EA3129 /* sheep.mp3 */; };
 		3DB051D91EA26C0200EA3129 /* bach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DB051D81EA26C0200EA3129 /* bach.jpg */; };
+		3DB051DB1EA2771300EA3129 /* sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DB051DA1EA2771300EA3129 /* sheep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		3DB051CB1EA2680000EA3129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB051CE1EA2680000EA3129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB051D01EA2680000EA3129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DB051D61EA26BF400EA3129 /* sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheep.mp3; sourceTree = "<group>"; };
 		3DB051D81EA26C0200EA3129 /* bach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bach.jpg; sourceTree = "<group>"; };
+		3DB051DA1EA2771300EA3129 /* sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				3DB051C41EA2680000EA3129 /* AppDelegate.swift */,
 				3DB051C61EA2680000EA3129 /* ViewController.swift */,
 				3DB051C81EA2680000EA3129 /* Main.storyboard */,
-				3DB051D61EA26BF400EA3129 /* sheep.mp3 */,
 				3DB051D81EA26C0200EA3129 /* bach.jpg */,
+				3DB051DA1EA2771300EA3129 /* sheep.mp3 */,
 				3DB051CB1EA2680000EA3129 /* Assets.xcassets */,
 				3DB051CD1EA2680000EA3129 /* LaunchScreen.storyboard */,
 				3DB051D01EA2680000EA3129 /* Info.plist */,
@@ -129,7 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB051D71EA26BF400EA3129 /* sheep.mp3 in Resources */,
+				3DB051DB1EA2771300EA3129 /* sheep.mp3 in Resources */,
 				3DB051D91EA26C0200EA3129 /* bach.jpg in Resources */,
 				3DB051CF1EA2680000EA3129 /* LaunchScreen.storyboard in Resources */,
 				3DB051CC1EA2680000EA3129 /* Assets.xcassets in Resources */,
