@@ -26,7 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="zM3-bX-dpQ">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="84F-RT-nq9"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="84F-RT-nq9">
+                                            <connections>
+                                                <action selector="play:" destination="BYZ-38-t0r" id="b4l-F8-Mw4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -34,9 +38,17 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="pause" id="n0d-Im-QYh"/>
+                                    <barButtonItem systemItem="pause" id="n0d-Im-QYh">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="Svt-Yz-rYu"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="etw-CD-ELn"/>
-                                    <barButtonItem title="Stop" id="RFd-CX-e8I"/>
+                                    <barButtonItem title="Stop" id="RFd-CX-e8I">
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="yld-Ho-QC9"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bach.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ejm-tx-bcP">
@@ -46,14 +58,24 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Zb-yB-aEg">
                                 <rect key="frame" x="95" y="387" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="JKI-kT-2ip"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7V4-Zz-8dT">
                                 <rect key="frame" x="95" y="453" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="scrubberMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="KEh-2i-bQO"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="scrubber" destination="7V4-Zz-8dT" id="bBi-68-faf"/>
+                        <outlet property="volumeSlider" destination="5Zb-yB-aEg" id="64m-Zc-Bgu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
